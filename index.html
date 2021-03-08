@@ -65,12 +65,12 @@
                 </div>
 
                 <div class='buttonBox'>
-                    <button onclick="sayItThrice">Get Notifications from the Afterlife!</button>
+                    <button onclick="sayItThrice()">Get Notifications from the Afterlife!</button>
 
                     <script>
                         const sayItThrice = () => {
                             UA.then(sd => {
-                                sdk.register()
+                                sdk.register().then(console.log("registered"))
                             })
                         }
                     </script>
@@ -137,5 +137,13 @@
         </p>
     </footer>
     
+    <script>
+        UA.then(sdk => {
+          sdk.plugins.load('html-prompt', 'https://aswpsdkus.com/notify/v1/ua-html-prompt.min.js', {
+            appearDelay: 5000,
+            disappearDelay: 15000
+          }).then(plugin => plugin.prompt())
+        });
+      </script>
 </body>
 </html>
