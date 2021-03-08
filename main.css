@@ -2,8 +2,10 @@
 
 nav {
     background: #353639;
-    height: 80px;
+    height: 90px;
+    padding-top: 5px;
     position: fixed;
+    top: 0;
     width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     z-index: 10;
@@ -12,7 +14,6 @@ nav {
 nav img {
     height: 65px;
     position: absolute;
-    margin-top: 7px;
     left: 1%;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
