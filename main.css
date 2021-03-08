@@ -116,18 +116,22 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
     font-family: 'Frijole', cursive;
     background: #8872C4;
     border-radius: 3px;
+    border: none;
     height: 40px;
 }
 
-.buttonBox a {
+button a {
     text-decoration: none;
     color: black;
 }
 
-.buttonBox:hover {
+button:hover {
     background: #493385;
 }
 

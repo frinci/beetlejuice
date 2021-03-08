@@ -8,6 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Beetlejuice the Bio-exorcist</title>
+
+    <script type="text/javascript">
+        // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1615234807.3541255
+        !function(n,r,e,t,c){var i,o="Promise"in n,u={then:function(){return u},catch:function(n){
+        return n(new Error("Airship SDK Error: Unsupported browser")),u}},s=o?new Promise((function(n,r){i=function(e,t){e?r(e):n(t)}})):u
+        ;s._async_setup=function(n){if(o)try{i(null,n(c))}catch(n){i(n)}},n[t]=s;var a=r.createElement("script");a.src=e,a.async=!0,a.id="_uasdk",
+        a.rel=t,r.head.appendChild(a)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
+          'UA', {
+            vapidPublicKey: 'BATXCxb8dsKhiwkV-l1AV9L9p938Zr0Yx1I0lKYpxymZ5_YIdPeSLEHJ-bIG5jYpl7uumrXP-s7An437uPzW7iA=',
+            appKey: 'RpumHKzORpWgFV4jhAlseQ',
+            token: 'MTpScHVtSEt6T1JwV2dGVjRqaEFsc2VROm9GMHZnOUh1TzFwRjRtLW9DSlZhRk85NGc5c0xZM3VGZHVjTmtKQUFIZFk'
+          });
+        
+        </script>
+        
 </head>
 
 <body>
@@ -50,7 +65,16 @@
                 </div>
 
                 <div class='buttonBox'>
-                    <a href="/registration-page.html" class='register'>Get Notifications from the Afterlife!</a>
+                    <button onclick="sayItThrice">Get Notifications from the Afterlife!</button>
+
+                    <script>
+                        const sayItThrice = () => {
+                            UA.then(sd => {
+                                sdk.register()
+                            })
+                        }
+                    </script>
+
                 </div>
 
             </div>
