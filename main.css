@@ -192,7 +192,7 @@ span {
 
 footer {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     background: #353639;
     height: 50px;
 }
