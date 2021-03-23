@@ -43,7 +43,7 @@
         <div class="mainBox">
             <div>
                 <a href="https://wolfinger.bigcartel.com/product/beetlejuice" target="_blank">
-                    <img class='beetleHead' src="images/bjHeadshot.jpg" alt="headshot of Beetlejuice with Beetlejuice signe below"/>
+                    <img class='beetleHead' src="images/headshot.jpg" alt="headshot of Beetlejuice with Beetlejuice signe below"/>
                 </a>
             </div>
 
@@ -65,10 +65,10 @@
                 </div>
 
                 <div class='buttonBox'>
-                    <button onclick="sayItThrice()">Get Notifications from the Afterlife!</button>
+                    <button onclick="sayItThrice() ">Get Notifications from the Afterlife!</button>
 
                     <script>
-                        const sayItThrice = () => {
+                        function sayItThrice() {
                             UA.then(sdk => {
                                 sdk.register().then(console.log("registered"))
                             })
